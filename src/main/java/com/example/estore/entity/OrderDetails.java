@@ -21,6 +21,7 @@ public class OrderDetails {
     private double unitPrice;
     private  int quantity;
     private double discount;
+    private int productId;
 //    @ManyToOne
 //    @JoinColumn(name = "orderId")
 //    private Order order;

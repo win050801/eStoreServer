@@ -32,4 +32,5 @@ public class Customer {
     )
     @JoinColumn(name = "customerId")
     private List<Order> orders = new ArrayList<>();
+
 }
