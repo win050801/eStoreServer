@@ -27,7 +27,7 @@ public class Order {
     private String  address	;
     private double amount;
     private String description;
-
+    private String customerId;
 //    @OneToMany(mappedBy = "order",fetch = FetchType.EAGER)
 //    List<OrderDetails> orderDetails;
 
@@ -36,6 +36,8 @@ public class Order {
             cascade = CascadeType.ALL,
             orphanRemoval = true
     )
+
     @JoinColumn(name = "orderId")
     private List<OrderDetails> orderDetails = new ArrayList<>();
+
 }
