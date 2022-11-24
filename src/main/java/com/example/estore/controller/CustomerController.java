@@ -14,7 +14,7 @@ import java.util.List;
 @CrossOrigin
 public class CustomerController {
     @Autowired
-    private CustomerRepository customerRepository;
+    public CustomerRepository customerRepository;
     @GetMapping("/getAllCustomer")
     public List<Customer> getAllCustomer(){
         return customerRepository.findAll();
