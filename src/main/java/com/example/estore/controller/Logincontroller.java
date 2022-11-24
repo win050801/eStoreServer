@@ -27,10 +27,7 @@ public Customer register(@RequestBody Customer user){
     repository.save(user);
     return repository.save(user);
 }
-    @GetMapping("/test")
-    public String test(){
-        return "test";
-    }
+
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody Customer user){
@@ -50,12 +47,7 @@ public Customer register(@RequestBody Customer user){
 
 
 
-//    @GetMapping("/getUser1")
-//    public User getUser1()
-//    {
-//        RestTemplate restTemplate = new RestTemplate();
-//        return restTemplate.getForObject("http://localhost:3000/getUser",User.class);
-//    }
+
 
 
 

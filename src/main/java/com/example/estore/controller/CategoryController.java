@@ -14,13 +14,13 @@ import java.util.List;
 @CrossOrigin
 public class CategoryController {
     @Autowired
-    private CategoryRepository categoryRepository;
+    public CategoryRepository categoryRepository;
     @GetMapping("/getAllCategories")
-    private List<Category> getAllCategory(){
+    public List<Category> getAllCategory(){
         return categoryRepository.findAll();
     }
     @GetMapping("categories/{id}")
-    private Category findCategoryById(@PathVariable int id){
+    public Category findCategoryById(@PathVariable int id){
         return categoryRepository.findById(id).get();
     }
 }
