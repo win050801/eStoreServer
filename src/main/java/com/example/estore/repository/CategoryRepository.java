@@ -11,6 +11,4 @@ import javax.transaction.Transactional;
 @Repository
 @Transactional
 public interface CategoryRepository extends JpaRepository<Category, Integer> {
-    Category findByName(String name);
-    Category findByNameVn(String nameVn);
 }
