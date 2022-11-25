@@ -1,4 +1,4 @@
-package com.example.estore.controller;
+    package com.example.estore.controller;
 
 import com.example.estore.entity.Category;
 import com.example.estore.repository.CategoryRepository;
@@ -22,5 +22,15 @@ public class CategoryController {
     @GetMapping("categories/{id}")
     public Category findCategoryById(@PathVariable int id){
         return categoryRepository.findById(id).get();
+    }
+
+    @GetMapping("categories/{name}")
+    public Category findCategoryByName(@PathVariable String name){
+        return categoryRepository.findByName(name);
+    }
+
+    @GetMapping("categories/{nameVn}")
+    public Category findCategoryByNameVn(@PathVariable String nameVn){
+        return categoryRepository.findByNameVn(nameVn);
     }
 }
