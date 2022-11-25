@@ -51,9 +51,5 @@ public class ProductController {
         List<Product> list = cate.getProducts();
         return list;
     }
-    @GetMapping("product/{name}")
-    public Product findCategoryByName(@PathVariable String name){
-        return productRepository.findByName(name);
-    }
 
 }

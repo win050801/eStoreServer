@@ -24,13 +24,4 @@ public class CategoryController {
         return categoryRepository.findById(id).get();
     }
 
-    @GetMapping("categories/{name}")
-    public Category findCategoryByName(@PathVariable String name){
-        return categoryRepository.findByName(name);
-    }
-
-    @GetMapping("categories/{nameVn}")
-    public Category findCategoryByNameVn(@PathVariable String nameVn){
-        return categoryRepository.findByNameVn(nameVn);
-    }
 }
