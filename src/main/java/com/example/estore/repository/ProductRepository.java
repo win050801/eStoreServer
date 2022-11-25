@@ -1,5 +1,6 @@
 package com.example.estore.repository;
 
+import com.example.estore.entity.Category;
 import com.example.estore.entity.Order;
 import com.example.estore.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;

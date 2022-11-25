@@ -1,6 +1,7 @@
 package com.example.estore.repository;
 
 import com.example.estore.entity.Category;
+import com.example.estore.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.support.Repositories;
 import org.springframework.stereotype.Repository;

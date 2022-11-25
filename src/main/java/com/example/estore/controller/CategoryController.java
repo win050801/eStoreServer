@@ -1,4 +1,4 @@
-package com.example.estore.controller;
+    package com.example.estore.controller;
 
 import com.example.estore.entity.Category;
 import com.example.estore.repository.CategoryRepository;
@@ -23,4 +23,5 @@ public class CategoryController {
     public Category findCategoryById(@PathVariable int id){
         return categoryRepository.findById(id).get();
     }
+
 }
