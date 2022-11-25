@@ -1,6 +1,5 @@
 package com.example.estore.redisrepository;
 
-import com.example.estore.redisentity.RCategory;
 import com.example.estore.redisentity.ROrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
