@@ -25,4 +25,10 @@ public class OrderController {
         return orderRepository.findByCustomerId(id);
     }
 
+    @PostMapping("getOrder/{name}")
+    public List<Order> getOrderName(@PathVariable String name)
+    {
+        return orderRepository.findByCustomerName(name);
+    }
+
 }
