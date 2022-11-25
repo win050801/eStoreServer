@@ -28,6 +28,9 @@ public class OrderController {
     @PostMapping("saveOrder")
     public Order saveOrder(@RequestBody Order order)
     {
+
+        
+
 //        System.out.println(orderRepository.save(order).getOrderId());
 //        orderRepository.findByCustomerId(order.getCustomerId());
 //        ROrder rOrder = new ROrder(order.getOrderId(),order.getAddress(),order.getAmount(),
@@ -44,6 +47,7 @@ public class OrderController {
                 order.getCustomerId(),listR);
         rOrderRepository.save(rOrder);
         System.out.println(rOrderRepository.findAll());
+
         return orderRepository.save(order);
     }
     @PostMapping("getOrder/{id}")
