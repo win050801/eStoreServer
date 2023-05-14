@@ -29,4 +29,5 @@ public class Category {
     )
     @JoinColumn(name = "categoryId")
     private List<Product> products = new ArrayList<>();
+    
 }

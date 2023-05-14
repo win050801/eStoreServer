@@ -5,7 +5,7 @@ import com.example.estore.entity.Product;
 import com.example.estore.repository.CategoryRepository;
 import com.example.estore.repository.ProductRepository;
 import com.example.estore.service.CookieService;
-import io.github.resilience4j.retry.annotation.Retry;
+//import io.github.resilience4j.retry.annotation.Retry;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.web.bind.annotation.*;
@@ -33,7 +33,7 @@ public class ProductController {
     CookieService cookie;
     RestTemplate restTemplate = new RestTemplate();
     @GetMapping("/getAllProduct")
-    @Retry(name = "productServer",fallbackMethod = "getDefaultProductRating")
+//    @Retry(name = "productServer",fallbackMethod = "getDefaultProductRating")
     public List<Product> getAllProduct(){
 //        restTemplate.getForObject("",Product.class);
         return productRepository.findAll();

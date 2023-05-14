@@ -14,7 +14,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @RestController
 @RequestMapping("/login")
 @CrossOrigin
-public class Logincontroller {
+public class LoginController {
     @Autowired
     CustomerRepository repository;
 //    @RequestMapping("/")
