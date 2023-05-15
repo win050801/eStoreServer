@@ -5,4 +5,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface LoginRepository extends CrudRepository<User,String> {
     User findByPhoneNumber(String phone);
+
+
 }

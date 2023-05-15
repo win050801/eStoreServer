@@ -10,4 +10,5 @@ import javax.transaction.Transactional;
 @Transactional
 public interface CustomerRepository extends JpaRepository<Customer,String> {
     Customer findByEmail(String email);
+
 }

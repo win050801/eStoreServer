@@ -22,6 +22,7 @@ public class Customer {
     private String photo	;
     private boolean admin;
     private boolean activated;
+    private String adress;
 //    @OneToMany(mappedBy = "customer")
 //    List<Order> orders;
 
